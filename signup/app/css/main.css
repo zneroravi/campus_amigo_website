@@ -1,0 +1,445 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+.container{
+    background: #aaa url('../../images/login3.jpg') center fixed no-repeat;
+    background-size: cover;
+    width:100%;
+    height:768px;
+}
+.animate{
+    background-color: rgba(0,0,0,0.67);
+    width:100%;
+    height:100%;
+
+}
+.signin-content{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    
+    -webkit-transition: all ease 2s;
+    -moz-transition: all ease 2s;
+    transition: all ease 2s;
+    display: block;
+    z-index: 1;
+}
+
+.signup-content{
+    width:100%;
+    height:100%;
+    position:absolute;
+    -webkit-transition: all ease 2s;
+    -moz-transition: all ease 2s;
+    transition: all ease 2s;
+    display: none;
+    z-index: 1;
+    top: 700px;
+}
+.forget-content{
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    -webkit-transition: all ease 2s;
+    -moz-transition: all ease 2s;
+    transition: all ease 2s;
+    display: none;
+    z-index: 1;
+}
+
+/* styling rules for signin form */
+
+.signin-content input{
+    width: 250px;
+    height: 30px;
+    display: block;
+    margin: 1px auto;
+    border-radius: 3px;
+    border: none;
+}
+.signin-content input[type=email]{
+    margin-top: 40px;
+    padding: 0px 25px 0 10px ;
+    margin-bottom:0px;
+    
+}
+.signin-content input[type=email]:focus{
+    border: 1px solid #1f9030;
+}
+.signin-content input[type=password]
+{
+    padding: 0px 25px 0 10px ;
+    margin-top: -10px;
+}
+.signin-content input[type=password]:focus
+{
+    border: 1px solid #1f9030;
+}
+.signin-content input[type=submit]
+{
+    background-color: #dc143c;
+    color: #fff;
+    font-weight: normal;
+    font-size: 12pt;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 35px;
+    -webkit-transition: all ease 170ms;
+    -moz-transition: all ease 200ms;
+    transition: all ease 200ms;
+}
+.signin-content input[type=submit]:hover{
+    background-color: #f0143c;
+    cursor: pointer;
+}
+.signin-content input[type=submit]:active{
+    background-color: #f0143c;
+}
+.user-icon{
+    width: 70px;
+    position: relative;
+    display: block;
+     margin: 50px auto 0px auto;
+}
+.user-icon img{
+    display: block;
+    width: 100%;
+    height:auto
+}
+
+.signin-content #fb-lgn{
+    margin-top: 40px;
+    background-color: #364Fa4;
+    color: #fff;
+    -webkit-transition: all ease 170ms;
+    -moz-transition: all ease 200ms;
+    transition: all ease 200ms;
+}
+.signin-content #fb-lgn:hover{
+    background-color: #263db4;
+    cursor: pointer; 
+}
+.signin-content #twi-lgn{
+    margin-top: 5px;
+    background-color: #008FC0;
+    color: #fff; 
+    -webkit-transition: all ease 170ms;
+    -moz-transition: all ease 200ms;
+    transition: all ease 200ms;
+}
+.signin-content #twi-lgn:hover{
+    background-color: #009fd5;
+    cursor: pointer;
+}
+.signin-content #google-lgn{
+    margin-top:5px;
+    background-color: #DB4A39;
+    color: #fff;
+    -webkit-transition: all ease 170ms;
+    -moz-transition: all ease 200ms;
+    transition: all ease 200ms;
+}
+.signin-content #google-lgn:hover
+{
+    background-color: #eb5a39;
+    cursor: pointer;
+}
+.signin-content .forg-pass{
+    display: block;
+    margin: 6px auto;
+    width: 250px;
+    text-align: center;
+    
+}
+.signin-content .forg-pass p{
+    color: #aaa;
+    font-size: 10pt;
+    -webkit-transition: all ease 170ms;
+    -moz-transition: all ease 200ms;
+    transition: all ease 200ms;
+}
+.signin-content .forg-pass p:hover{
+    color: #ddd;
+    cursor: pointer;
+}
+
+.signin-content #email-container{
+    position:relative;
+    width: 250px;
+    display: block;
+    margin:auto;
+}
+.signin-content #email-container img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top:4px;
+    right: 5px;
+}
+.signin-content #pass-container{
+    position:relative;
+    width: 250px;
+    display: block;
+    margin:auto
+}
+.signin-content #pass-container img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top:4px;
+    right: 5px;
+}
+.signupFormLink-container{
+    display:block;
+    width: 250px;
+    margin: 100px auto 0px auto;
+    height: 35px;
+}
+.signupFormLink-container #sflBtn
+{
+    width:100%;
+    height:100%;
+    background-color: transparent;
+    color: #aaa;
+    border:none;
+    -webkit-transition: all ease 170ms;
+    -moz-transition: all ease 200ms;
+    transition: all ease 200ms;
+}
+.signupFormLink-container #sflBtn:hover{
+    background-color: rgba(250,250,250,0.1);
+    cursor: pointer;
+}
+.signupFormLink-container #sflBtn:active{
+    background-color: rgba(250,250,250,0.01);
+    cursor: pointer;
+}
+
+
+/* styling rules for signup form */
+
+
+.signup-content input{
+    width: 250px;
+    height: 30px;
+    display: block;
+    margin: -5px auto;
+    border-radius: 3px;
+    border: none;
+}
+.signup-content #usrName-container{
+    position:relative;
+    width: 250px;
+    display: block;
+    margin:auto;
+}
+.signup-content #usrName-container img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top:4px;
+    right: 5px;
+}
+.signup-content input[type=text]
+{
+    margin-top: 40px;
+    padding: 0px 25px 0 10px ;
+    margin-bottom: 0px;
+}
+.signup-content input[type=email]{
+    padding: 0px 25px 0 10px ;
+    margin-bottom:0px;
+    margin-top: -15px;
+}
+.signup-content input[type=tel]
+{
+    margin-top: -15px;
+    padding: 0px 25px 0 10px ;
+}
+
+.signup-content input[type=email]:focus{
+    border: 1px solid #1f9030;
+}
+
+.signup-content input[type=password]
+{
+    padding: 0px 25px 0 10px ;
+    margin-top: -10px;
+}
+.signup-content input[type=password]:focus
+{
+    border: 1px solid #1f9030;
+}
+.signup-content #pass-container, .signup-content #cpass-container
+{
+    position:relative;
+    width: 250px;
+    display: block;
+    margin:auto
+}
+
+.signup-content #pass-container img, .signup-content #cpass-container img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top:4px;
+    right: 5px;
+}
+.signup-content .dropDown
+{
+    width: 250px;
+    height: 30px;
+    display: block;
+    margin: 0px auto;
+    border-radius: 3px;
+    border: none;
+    margin-top:-10px;
+    padding: 0px 25px 0 6px ;
+    color: #444;
+}
+.signup-content input[type=submit]
+{
+    background-color: #00B0FF;
+    color: #fff;
+    font-weight: normal;
+    font-size: 12pt;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 35px;
+    -webkit-transition: all ease 170ms;
+    -moz-transition: all ease 200ms;
+    transition: all ease 200ms;
+}
+
+.signup-content input[type=submit]:hover{
+    background-color: #00c0ff;
+    cursor: pointer;
+}
+.signup-content input[type=submit]:active{
+    background-color: #00c0ff;
+}
+
+.signup-content #signup-fb-connect{
+    margin-top: 40px;
+    background-color: #364Fa4;
+    color: #fff;
+    -webkit-transition: all ease 170ms;
+    -moz-transition: all ease 200ms;
+    transition: all ease 200ms;
+    margin-bottom:0px;
+}
+.signup-content #signup-fb-connect:hover
+{
+    background-color: #263db4;
+    cursor: pointer; 
+}
+.signup-content #signup-google-connect{
+    margin-top:-10px;
+    background-color: #DB4A39;
+    color: #fff;
+    -webkit-transition: all ease 170ms;
+    -moz-transition: all ease 200ms;
+    transition: all ease 200ms;
+}
+.signup-content #signup-google-connect:hover
+{
+    background-color: #eb5a39;
+    cursor: pointer;
+}
+.seperator{
+    width:120px;
+    display: block;
+    margin: 0 auto;
+    height:0px;
+    border-bottom: 0.2px solid #aaa;
+}
+
+.signinFormLink-container{
+    display:block;
+    width: 250px;
+    margin: 60px auto 0px auto;
+    height: 35px;
+}
+.signinFormLink-container #sinflBtn
+{
+    width:100%;
+    height:100%;
+    background-color: transparent;
+    color: #aaa;
+    border:none;
+    -webkit-transition: all ease 170ms;
+    -moz-transition: all ease 200ms;
+    transition: all ease 200ms;
+}
+.signinFormLink-container #sinflBtn:hover{
+    background-color: rgba(250,250,250,0.1);
+    cursor: pointer;
+}
+.signinFormLink-container #sinflBtn:active{
+    background-color: rgba(250,250,250,0.01);
+    cursor: pointer;
+}
+
+/* styling rules for password reset form */
+
+.forget-content input{
+    width: 250px;
+    height: 30px;
+    display: block;
+    margin: 1px auto;
+    border-radius: 3px;
+    border: none;
+}
+.forget-content input[type=email]{
+    margin-top: 40px;
+    padding: 0px 25px 0 10px ;
+    margin-bottom:0px;
+    
+}
+.forget-content input[type=submit]
+{
+    background-color: #dc143c;
+    color: #fff;
+    font-weight: normal;
+    font-size: 12pt;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 35px;
+    -webkit-transition: all ease 170ms;
+    -moz-transition: all ease 200ms;
+    transition: all ease 200ms;
+}
+.forget-content input[type=submit]:hover{
+    background-color: #f0143c;
+    cursor: pointer;
+}
+.forget-content input[type=submit]:active{
+    background-color: #f0143c;
+}
+
+
+.forget-content #sinflBtn2
+{
+    width:100%;
+    height:100%;
+    background-color: transparent;
+    color: #aaa;
+    border:none;
+    -webkit-transition: all ease 170ms;
+    -moz-transition: all ease 200ms;
+    transition: all ease 200ms;
+}
+.forget-content #sinflBtn2:hover{
+    background-color: rgba(250,250,250,0.1);
+    cursor: pointer;
+}
+.forget-content #sinflBtn2:active{
+    background-color: rgba(250,250,250,0.01);
+    cursor: pointer;
+}

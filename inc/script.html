@@ -1,0 +1,133 @@
+<!-- Include modernizr-2.8.0.min.js -->
+	<script src="assets/js/modernizr-2.8.0.min.js"></script>
+
+	<!-- Include jquery.min.js plugin -->
+	<script src="assets/js/jquery-2.1.0.min.js"></script>
+
+	<!-- Email Validator -->
+	<script src="assets/js/email-validation.js"></script>
+
+	<!-- Include JavaScript Plugins -->
+	<script src="assets/js/plugins.js"></script>
+
+	<!-- Include JavaScript Functions -->
+	<script src="assets/js/functions.js"></script>
+
+	<!-- Include jquery.parallax.js Plugins -->
+	<script src="assets/js/jquery.parallax.js"></script>
+
+	<!-- Include wow.js Plugins -->
+	<script src="assets/js/wow.min.js"></script>
+
+	<script src="assets/js/jquery.content_slider.min.js"></script>
+	<script src="assets/js/jquery.mousewheel.js"></script>
+
+	<!-- Google Maps Script  -->
+	<script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+
+	<!-- Gmap3.js For Static Maps -->
+	<script src="assets/js/gmap3.js"></script>
+
+	<script type="text/javascript">
+
+	    /*----------- wow animation with support of wow.js and animation.css ----------------*/
+		var wow = new WOW(
+		  {
+		    boxClass:     'wow',      // animated element css class (default is wow)
+		    animateClass: 'animated', // animation css class (default is animated)
+		    offset:       0,          // distance to the element when triggering the animation (default is 0)
+		    mobile:       false       // trigger animations on mobile devices (true is default)
+		  }
+		);
+		wow.init();
+
+		/*----------- Google Map - with support of gmaps.js ----------------*/
+
+		function isMobile() {
+			return ('ontouchstart' in document.documentElement);
+		}
+
+		function init_gmap() {
+			if ( typeof google == 'undefined' ) return;
+			var options = {
+				center: [53.599339, 10.172954],
+				zoom: 15,
+				mapTypeControl: true,
+				mapTypeControlOptions: {
+					style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+				},
+				navigationControl: true,
+				scrollwheel: false,
+				streetViewControl: true
+			}
+
+			if (isMobile()) {
+				options.draggable = false;
+			}
+
+			$('#googleMaps').gmap3({
+				map: {
+					options: options
+				},
+				marker: {
+					latLng: [53.599339, 10.172954],
+					options: { icon: 'assets/images/mapicon.png' }
+				}
+			});
+		}
+
+		init_gmap();
+
+
+
+
+		jQuery(document).ready(function($) {
+			"use strict";
+
+			/*---------------------- Current Menu Item -------------------------*/
+			$('#main-menu #headernavigation').onePageNav({
+				currentClass: 'active',
+				changeHash: false,
+				scrollSpeed: 750,
+				scrollThreshold: 0.5,
+				scrollOffset: 160,
+				filter: ':not(.sub-menu a, .not-in-home)',
+				easing: 'swing'
+			});
+
+
+
+			/*------------------- Testimonials Client Slider ----------------------*/
+			var image_array = new Array();
+				image_array = [
+				{image: 'images/testimonials-client/1.jpg'},
+					// image for the first layer, goes with the text from id="sw0"
+					{image: 'images/testimonials-client/2.jpg'},
+					// image for the second layer, goes with the text from id="sw1"
+					{image: 'images/testimonials-client/3.jpg'},
+					// image for the third layer, goes with the text from id="sw2"
+					{image: 'images/testimonials-client/4.jpg'},
+					// ...
+					{image: 'images/testimonials-client/5.jpg'},
+					{image: 'images/testimonials-client/6.jpg'},
+					{image: 'images/testimonials-client/7.jpg'}
+					];
+			$('#testimonial-slider').content_slider({		// bind plugin to div id="slider1"
+				map : image_array,				// pointer to the image map
+				max_shown_items: 7,				// number of visible circles
+				hv_switch: 0,					// 0 = horizontal slider, 1 = vertical
+				active_item: 0,					// layer that will be shown at start, 0=first, 1=second...
+				wrapper_text_max_height: 450,	// height of widget, displayed in pixels
+				middle_click: 1,				// when main circle is clicked: 1 = slider will go to the previous layer/circle, 2 = to the next
+				under_600_max_height: 1200,		// if resolution is below 600 px, set max height of content
+				border_radius:	-1,				// -1 = circle, 0 and other = radius
+				automatic_height_resize: 1,
+				border_on_off: 0,
+				allow_shadow: 0
+			});
+
+
+		});
+		// document ready function End
+
+	</script>

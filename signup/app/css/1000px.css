@@ -1,0 +1,177 @@
+*{
+    font-size: 100%;
+}
+body{background-color: #000;}
+.signin-content{
+    width: 50%;
+    background-color: rgba(50,0,30,0.8);
+   -webkit-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all ease 2s;
+    -moz-transition: all ease 2s;
+    transition: all ease 2s;
+    perspective: 500px;
+    display: block;
+    -webkit-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    left:0px;
+}
+/*.animate.flip:hover .signin-content{
+    transform: rotateY(180deg);
+}
+.animate.flip:hover .signup-content{
+    transform: rotateY(0deg);
+}*/
+.container{
+    position: fixed;
+    background: url('../../images/login.jpg') center fixed no-repeat;
+    background-size: cover;
+}
+.animate{
+    background-color: rgba(0,30,50,0.47);
+}
+.user-icon{
+    margin: 50px auto 0px auto;
+}
+.user-icon img{
+    width: 110px;
+}
+.signup-content{
+    display: block;
+    top:0px;
+    width: 50%;
+    background-color: rgba(0,150,70,0.6);;
+    -webkit-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;    
+    perspective: 500px;
+    -webkit-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all ease 2s;
+    -moz-transition: all ease 2s;
+    transition: all ease 2s;
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    right:0px;
+}
+.signin-content input{
+    width:350px;
+    height: 37px;
+}
+.signup-content input,.signup-content .dropDown{
+    width:350px;
+    height: 32px;
+}
+.signup-content input[type=text]
+{
+    margin-top:20px;
+}
+.signup-content #usrName-container img
+{
+    top:5px !important;
+}
+.signup-content #pass-container img, .signup-content #cpass-container img
+{
+    top:5px !important;
+}
+
+.signup-content input[type=submit]
+{
+    height: 40px;
+}
+.signin-content #email-container,.signin-content #pass-container{
+    width: 350px;
+}
+.signup-content #email-container,.signup-content #pass-container,.signup-content #cpass-container,.signup-content #usrName-container{
+    width: 350px;
+}
+.signin-content #email-container img,.signin-content #pass-container img
+{
+    top: 10px;
+    right: 10px;
+}
+.signup-content #email-container img,.signup-content #pass-container img,.signup-content #cpass-container img,.signup-content #usrName-container img
+{
+    top: 10px;
+    right: 10px;
+}
+.signupFormLink-container{
+    position: absolute;
+    right:-150px;
+    margin-top: 50px;
+}
+.signupFormLink-container #sflBtn{
+    color: #fff;
+    font-size: 102%;
+    word-spacing: 2px;
+    border-radius: 4px;
+}
+/*.signupFormLink-container #sflBtn:hover{
+    box-shadow: -2px -3px 1px 0.5px #fff;
+    background-color: #00B0FF;
+}*/
+.seperator{
+    width: 200px;
+}
+.signup-content .user-icon{
+    margin: 50px auto 0px auto;
+}
+.signup-content .signinFormLink-container{
+    position: absolute;
+    left:-150px;
+    margin-top:10px;
+}
+.signup-content .signinFormLink-container #sinflBtn{
+    color: #fff;
+    font-size: 102%;
+    word-spacing: 2px;
+    border-radius:4px;
+   
+    }
+/*.signup-content .signinFormLink-container #sinflBtn:hover{
+    background-color: #dc143c;
+    box-shadow: -2px -3px 1px 0.5px #fff;
+}*/
+
+.forget-content{
+    display: block;
+    top:0px;
+    right:0px;
+    width: 50%;
+    background-color: rgba(10,250,250,0.5);
+     -webkit-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    perspective: 500px;
+    -webkit-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all ease 2s;
+    -moz-transition: all ease 2s;
+    transition: all ease 2s;
+     -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.forget-content .signinFormLink-container{
+    display: block;  
+    border-radius: 4px;
+}
+.forget-content .signinFormLink-container #sinflBtn2{
+    color:#fff;
+}
+.forget-content .signinFormLink-container #sinflBtn2:hover{
+    background-color: #ff5533;
+    box-shadow: -2px -3px 1px 0.5px #fff;
+}
+.forget-content .signinFormLink-container #sinflBtn2:active{
+        background-color: #dd5533;
+}
+

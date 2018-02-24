@@ -1,0 +1,59 @@
+.signin-content input{
+    width: 300px;
+    height:33px;
+}
+.user-icon{
+    width: 100px;
+}
+.signin-content #email-container{
+    width:300px;
+}
+.signin-content #pass-container{
+    width:300px;
+}
+.signupFormLink-container{
+    width: 300px;
+}
+
+/* rules for signup form */
+
+.signup-content input{
+    width:300px;
+    height:33px;
+    margin-top: -1px;
+    margin-bottom:-1px;
+}
+.signup-content input[type=email]
+{
+    margin-top: -10px;
+}
+.signup-content input[type=tel]
+{
+    margin-top:-10px;
+}
+
+.signup-content #pass-container, .signup-content #cpass-container
+{
+    width: 300px;
+}
+.signup-content #usrName-container{
+    width:300px;
+}
+.signup-content .dropDown{
+    width:300px;
+}
+
+/* rules for forget form */
+
+
+.forget-content input{
+    width: 300px;
+    height: 33px;
+}
+.signinFormLink-container{
+    width: 300px;
+}
+
+.forget-content{
+    top: -600px;
+}
