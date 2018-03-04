@@ -45,7 +45,7 @@ body{background-color: #000;}
     display: block;
     top:0px;
     width: 50%;
-    background-color: rgba(0,150,70,0.6);;
+    background-color: rgba(0,10,70,0.6);
     -webkit-backface-visibility: hidden;
     -o-backface-visibility: hidden;
     backface-visibility: hidden;    
@@ -168,8 +168,9 @@ body{background-color: #000;}
     color:#fff;
 }
 .forget-content .signinFormLink-container #sinflBtn2:hover{
-    background-color: #ff5533;
-    box-shadow: -2px -3px 1px 0.5px #fff;
+    background-color: #116377;
+    border-radius: 5px;
+ /*   box-shadow: -2px -3px 1px 0.5px #fff;  */
 }
 .forget-content .signinFormLink-container #sinflBtn2:active{
         background-color: #dd5533;
