@@ -12,6 +12,7 @@
         <link rel="stylesheet" type="text/css" href="app/css/1000px.css" media="screen and (min-width: 1000px)" />
         <script type="text/javascript" src="plugin/js/jquery_v1_11_1.js"></script>
         <script type="text/javascript" src="app/js/main.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
        <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"> </script>-->
     </head>
 
