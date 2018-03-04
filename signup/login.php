@@ -36,7 +36,7 @@
                 <br/>
                 <input type="submit" value="Sign in" />
                  
-                <div class="forg-pass"><p>Forget password ?</p></div>
+                <div class="forg-pass"><p>Forgot password ?</p></div>
                 <input type="button" value="Connect with facebook" id="fb-lgn"/>
                 <input type="button" value="Login with Twitter" id="twi-lgn"/>
                 <input type="button" value="Login with Google+" id="google-lgn"/>
