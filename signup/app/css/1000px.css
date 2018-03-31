@@ -45,7 +45,7 @@ body{background-color: #000;}
     display: block;
     top:0px;
     width: 50%;
-    background-color: rgba(0,10,70,0.6);
+    background-color: #000a46;
     -webkit-backface-visibility: hidden;
     -o-backface-visibility: hidden;
     backface-visibility: hidden;    
